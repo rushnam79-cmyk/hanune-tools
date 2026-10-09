@@ -152,7 +152,7 @@
     document.querySelector('#product-search').addEventListener('input',event=>{ const q=event.target.value.trim().toLowerCase(); let visible=0; document.querySelectorAll('.product').forEach(card=>{ card.hidden=!card.dataset.search.toLowerCase().includes(q); if(!card.hidden) visible++; }); document.querySelector('#no-products').style.display=visible?'none':'block'; });
     const productDetails = {
       schedule:{title:'간편 일정·교대표',description:'할 일과 일정, 교대근무를 Windows PC에서 정리하는 프로그램입니다.',buyUrl:null},
-      ledger:{title:'사장님 정산장부',description:'견적과 입금, 비용, 미수금을 고객별로 정리하는 프로그램입니다.',buyUrl:null},
+      ledger:{title:'사장님 정산장부',description:'견적과 입금, 비용, 미수금을 고객별로 정리하는 프로그램입니다.',buyUrl:'https://kmong.com/gig/830920'},
       seller:{title:'온라인 셀러 수익장부',description:'온라인 판매의 원가와 수수료, 정산과 재고를 관리하는 프로그램입니다.',buyUrl:null},
       documents:{title:'문서·영수증 정리함',description:'문서와 영수증을 분류하고 검색하는 Windows 프로그램입니다.',buyUrl:null},
       ideas:{title:'유튜브 아이디어 레이더',description:'키워드별 참고 영상과 콘텐츠 아이디어를 조사·정리하는 프로그램입니다.',buyUrl:null},
